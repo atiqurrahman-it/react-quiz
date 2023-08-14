@@ -8,6 +8,7 @@ const Videos = () => {
         <Video/>
         <Video/>
         <Video/>
+        <Video/>
     </div>
   );
 };
