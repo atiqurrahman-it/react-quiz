@@ -1,28 +1,12 @@
-import { Link } from "react-router-dom";
-import Checkbox from "../../../component/Auth/Checkbox";
-import Form from "../../../component/Auth/Form";
 import Illustration from "../../../component/Auth/Illustration";
-import TextInput from "../../../component/Auth/TextInput";
-import Button from "../../../component/Button";
-import style from "../../../component/styles/signup.module.css";
+import SingUpForm from "../../../component/Auth/SingUpForm";
 const SingUp = () => {
   return (
     <>
       <h1>Create an account</h1>
       <div className="column">
         <Illustration />
-        <Form className={style.signup}>
-             <TextInput type="text" placeholder="Enter name" icon="person"></TextInput>
-             <TextInput type="email" placeholder="Enter email" icon="alternate_email"></TextInput>
-             <TextInput type="password" placeholder="Enter password" icon="lock"></TextInput>
-             <TextInput type="password" placeholder="confirm password" icon="lock_clock"></TextInput>
-             <Checkbox text="I agree to the Terms &amp; Conditions" />
-             <Button> <span> Submit now</span> </Button>
-             
-            <div className="info">
-              Already have an account? <Link to="/login">Login</Link> instead.
-            </div>
-        </Form>
+        <SingUpForm/>
       </div>
     </>
   );

@@ -1,26 +1,15 @@
-import { Link } from "react-router-dom";
-import Form from "../../../component/Auth/Form";
 import Illustration from "../../../component/Auth/Illustration";
-import TextInput from "../../../component/Auth/TextInput";
-import Button from "../../../component/Button";
-import style from "../../../component/styles/Login.module.css"
+import LoginForm from "../../../component/Auth/LoginForm";
 const Login = () => {
-    return (
-        <>
-        <h1>Login to your account</h1>
-        <div class="column">
-            <Illustration/>
-            <Form className={style.login}>
-                <TextInput type="email" placeholder="Enter Email" icon="alternate_email" />
-                <TextInput type="password" placeholder="Enter password" icon="lock" />
-                <Button><span> Submit now</span></Button>
-                <div class="info">Don't have an account? <Link to="/singUp">Signup</Link> instead.</div>
-
-            </Form>
-        </div>
-            
-        </>
-    );
+  return (
+    <>
+      <h1>Login to your account</h1>
+      <div class="column">
+        <Illustration />
+        <LoginForm />
+      </div>
+    </>
+  );
 };
 
 export default Login;
