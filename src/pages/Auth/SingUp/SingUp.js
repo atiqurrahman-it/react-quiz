@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Checkbox from "../../../component/Auth/Checkbox";
 import Form from "../../../component/Auth/Form";
 import Illustration from "../../../component/Auth/Illustration";
@@ -19,7 +20,7 @@ const SingUp = () => {
              <Button> <span> Submit now</span> </Button>
              
             <div className="info">
-              Already have an account? <a href="login.html">Login</a> instead.
+              Already have an account? <Link to="/login">Login</Link> instead.
             </div>
         </Form>
       </div>

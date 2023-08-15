@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Form from "../../../component/Auth/Form";
 import Illustration from "../../../component/Auth/Illustration";
 import TextInput from "../../../component/Auth/TextInput";
@@ -13,7 +14,7 @@ const Login = () => {
                 <TextInput type="email" placeholder="Enter Email" icon="alternate_email" />
                 <TextInput type="password" placeholder="Enter password" icon="lock" />
                 <Button><span> Submit now</span></Button>
-                <div class="info">Don't have an account? <a href="signup.html">Signup</a> instead.</div>
+                <div class="info">Don't have an account? <Link to="/singUp">Signup</Link> instead.</div>
 
             </Form>
         </div>
