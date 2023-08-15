@@ -1,8 +1,8 @@
 import style from "../component/styles/Button.module.css";
-const Button = ({children}) => {
+const Button = ({className,children}) => {
   return (
-    <div className={style.button}>
-      <span>{children}</span>
+    <div className={`${style.button} ${className}`}>
+      {children}
     </div>
   );
 };

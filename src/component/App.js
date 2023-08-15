@@ -1,15 +1,15 @@
-import "../component/styles/App.css"
-import Layout from "../layout/Layout"
-import Login from "../pages/Auth/Login/Login";
-import SingUp from "../pages/Auth/SingUp/SingUp";
-import Home from "../pages/Home/Home";
+import "../component/styles/App.css";
+import Layout from "../layout/Layout";
+import Result from "../pages/Result";
 function App() {
   return (
     <Layout>
       {/* mainContent */}
-      <Home/>
+      {/* <Home/> */}
       {/* <SingUp/> */}
-      <Login/>
+      {/* <Login/> */}
+      {/* <Quiz/> */}
+      <Result/>
     </Layout>
   );
 }
