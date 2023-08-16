@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import {
   createUserWithEmailAndPassword,
   getAuth,
@@ -7,6 +6,7 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
+import React, { useEffect, useState } from "react";
 import app from "../firebase/firebase.config";
 
 // create context

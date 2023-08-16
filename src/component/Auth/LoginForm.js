@@ -49,11 +49,11 @@ const LoginForm = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button>
+        <Button disabled={loading} type="submit">
           <span> Submit now</span>
         </Button>
         {error && <p className="error">{error}</p>}
-        <div class="info">
+        <div className="info">
           Don't have an account? <Link to="/singUp">Signup</Link> instead.
         </div>
       </Form>
