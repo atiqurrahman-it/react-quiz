@@ -7,6 +7,8 @@ import { initializeApp } from "firebase/app";
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_Auth_Domain,
+  //only for real time database [databaseURL]
+  databaseURL: process.env.REACT_APP_DatabaseURL,  
   projectId: process.env.REACT_APP_ProjectId,
   storageBucket: process.env.REACT_APP_Storage_Bucket,
   messagingSenderId: process.env.REACT_APP_Messaging_SenderId,
